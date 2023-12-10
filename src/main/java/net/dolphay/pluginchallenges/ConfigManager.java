@@ -14,7 +14,7 @@ public class ConfigManager {
         File config = new File(plugin.getDataFolder(), fileName);
 
         config.getParentFile().mkdirs();
-        plugin.saveResource("GreetConfiguration.yml", replace);
+        plugin.saveResource(fileName, replace);
     }
 
 

@@ -6,9 +6,13 @@ api-version: '1.19'
 commands:
   challenges:
     description: Allows reloading of the different challenge configuration files
-    usage: /challenges reload <Module>
+    usage: /challenges reload <module>
     permission: pluginchallenges.reload
   greet:
     description: Greets a player, if no player is specified it greets the newest player.
     usage: /greet <player>
     permission: pluginchallenges.greet
+  sword:
+    description: Gives the player a really cool sword
+    usage: /sword
+    permission: pluginchallenges.sword
