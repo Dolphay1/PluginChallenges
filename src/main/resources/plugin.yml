@@ -5,8 +5,8 @@ api-version: '1.19'
 
 commands:
   challenges:
-    description: Allows reloading of the different challenge configuration files
-    usage: /challenges reload <module>
+    description: To be implemented
+    usage: To be implemented
     permission: pluginchallenges.reload
   greet:
     description: Greets a player, if no player is specified it greets the newest player.
@@ -16,3 +16,15 @@ commands:
     description: Gives the player a really cool sword
     usage: /sword
     permission: pluginchallenges.sword
+  warrior:
+    description: Clears your inventory and gives you a worrier kit.
+    usage: /warrior
+    permission: pluginchallenges.warrior
+  archer:
+    description: Clears your inventory and gives you an archers kit.
+    usage: /archer
+    permission: pluginchallenges.archer
+  mage:
+    description: Clears your inventory and gives you an mages kit.
+    usage: /mage
+    permission: pluginchallenges.mage

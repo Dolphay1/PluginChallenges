@@ -5,7 +5,7 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
 
-public class GreetEventManager implements Listener {
+public class GreetEventHandler implements Listener {
     private Player newestPlayer;
 
     @EventHandler

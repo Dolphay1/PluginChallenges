@@ -31,6 +31,14 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-shade-plugin</artifactId>
         <version>3.2.4</version>
+          <configuration>
+              <relocations>
+                  <relocation>
+                      <pattern>io.github.bananapuncher714.nbteditor</pattern>
+                      <shadedPattern>net.dolphay.nbteditor</shadedPattern>
+                  </relocation>
+              </relocations>
+          </configuration>
         <executions>
           <execution>
             <phase>package</phase>
@@ -71,7 +79,7 @@
   <dependencies>
       <dependency>
           <groupId>org.spigotmc</groupId>
-          <artifactId>spigot-api</artifactId>
+          <artifactId>spigot</artifactId>
           <version>1.19.2-R0.1-SNAPSHOT</version>
           <scope>provided</scope>
       </dependency>

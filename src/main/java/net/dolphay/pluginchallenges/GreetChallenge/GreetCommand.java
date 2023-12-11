@@ -9,11 +9,11 @@ import org.bukkit.entity.Player;
 
 public class GreetCommand implements CommandExecutor {
     YamlConfiguration config;
-    GreetEventManager eventManager;
+    GreetEventHandler eventHandler;
 
-    public GreetCommand(YamlConfiguration config, GreetEventManager eventManager) {
+    public GreetCommand(YamlConfiguration config, GreetEventHandler eventHandler) {
         this.config = config;
-        this.eventManager = eventManager;
+        this.eventHandler = eventHandler;
     }
 
     @Override
@@ -23,7 +23,7 @@ public class GreetCommand implements CommandExecutor {
 
         // If args.length == 0 the player has not specified someone to greet, so we will use the newest player.
         if(args.length == 0) {
-            player = eventManager.getNewestPlayer();
+            player = eventHandler.getNewestPlayer();
         }
         // If they have defined a player, see if it is a valid player
         else if(Bukkit.getPlayer(args[0]) != null) {

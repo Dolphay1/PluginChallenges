@@ -1,0 +1,16 @@
+warrior:
+  helmet-name: "§6Warrior's Helmet"
+  chestplate-name: "§6Warrior's Chestplate"
+  leggings-name: "§6Warrior's Leggings"
+  boots-name: "§6Warrior's Boots"
+
+archer:
+  helmet-name: "§6Archer's Helmet"
+  chestplate-name: "§6Archer's Chestplate"
+  leggings-name: "§6Archer's Leggings"
+  boots-name: "§6Archer's Boots"
+  arrow-stack-count: 2
+mage:
+  wand-name: "§6Mage's Wand"
+  # Cooldown in milliseconds
+  wand-cooldown: 5000
